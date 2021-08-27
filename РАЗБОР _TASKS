@@ -1,0 +1,134 @@
+"""
+1) Создайте функцию, которая будет принимать 2 числа, складывать их и возвращать результат сложения.
+"""
+# метод №1
+a = int(input('enter first number:'))
+b = int(input('enter second number:'))
+def sum (a,b):
+    return a + b
+print(sum(a,b))
+
+# метод №2
+a = (25)
+b = (35)
+def i (a,b):
+    return a + b
+print(i(a,b))
+
+
+
+"""
+2) Создайте функцию, которая будет принимать строку. Функция должна выводить длину этой строки.
+"""
+a = str(input('Enter your name:'))
+
+def i(aa):
+      return len(aa)
+
+print(i(a))
+"""
+3) Создайте функцию, которая принимает два обязательных параметра. Задача этой функции выводить тип принятых аргументов.
+"""
+def type_of (z, x):
+    return type(z), type(x)
+
+
+
+"""
+4) Создайте функцию, которая должна принимать 2 числа и возвращать результат их деления.
+"""
+# метод №1
+a = int(input('Enter first number:'))
+b = int(input('Enter second number:'))
+def num(a,b):
+    return a/b
+
+print(num(a,b))
+
+
+# метод №2
+a = int(input('Enter first number:'))
+b = int(input('Enter second number:'))
+def num(a,b):
+    return a%b
+
+print(num(a,b))
+
+
+"""
+5) Создайте функцию, которая принимает словарь. Пройдитесь по словарю циклом и распечатайте все его ключи
+"""
+def dict_keys (dct_: dict):
+    for key in dct_.keys():
+        print (key
+"""
+6) Создайте функцию, которая принимает и выводит "It's odd number" если это число не кратно двум и "It's even number" в противном случае.
+"""
+a = int(input('Enter first number'))
+b = int(input('Enter second number'))
+def max_value(a,b):
+    if a%b!=0:
+        print("It's odd number")
+    else:
+        print ("It's even number")
+    return(a,b)
+max_value(a,b
+"""
+7) Напишите функцию, которая будет принимать строку и проверять является ли она палиндромом. Пробелы и регистр учитывать не нужно.
+(Палиндро́м, пе́ревертень — число, буквосочетание, слово или текст, одинаково читающееся в обоих направлениях. Например, число 101; слова "кок", "топот", "комок" и т.д.)
+"""
+def palindrome (string: str) -> str:
+    if string.lower().strip()[::-1] == string.lower().strip():
+        print (f'{string} is palindrome')
+    else:
+        print (f'{string} is not palindrome')
+"""
+8) Создайте функцию которая принимает от пользователя два числа. Она должна сравнить эти числа между собой и вывести максимальное значение.
+"""
+# метод №1
+a = int(input('Enter first number'))
+b = int(input('Enter second number'))
+def max_value(a,b):
+    return(max(a,b))
+print(max_value(a,b,))
+
+# метод №2
+a = int(input('Enter first number'))
+b = int(input('Enter second number'))
+def max_value(a,b):
+    if a>b:
+        print('max_value=',a)
+    elif b>a:
+        print ('max_value=',b)
+    return(max(a,b))
+print(max_value(a,b,))
+
+"""
+9) Напишите функцию, которая принимает список чисел и возвращает их произведение.
+"""
+def multiplication (nums: list) -> int:
+    a = 1
+    for i in nums:
+        a *= i
+    return a
+"""
+10) Напишите функцию, которая принимает целое число и возвращает сумму всех его цифр. 
+"""
+def digitsum (num: int) -> int:
+    sum = 0
+    for i in str(num):
+        sum += int(i)
+    return sum
+
+
+
+
+
+
+
+
+
+
+
+
+НАДО РАЗОБРАТЬ ЭТУ ДОМАШКУ 

@@ -1,0 +1,125 @@
+# # import random
+#
+#
+# # def hangman():
+# #       print("IT'S TIME TO PLAY HANGMAN")
+#
+# # wordlist = ['yogurt','orange','melon','glass']
+# # answer = random.choice(wordlist)
+# # guesses = '*'
+# # turns = 5
+#
+#
+#
+#
+#
+# # Так же бывают FullStack разработчики и
+# # поэтому создайте данный класс и чтобы у него были атрибуты
+# # и методы предыдущих классов.
+#
+# # Создайте экземпляры от классов Backend, Frontend, FullStack (obj_back, obj_front, obj_full_stack) и вызовите все их методы.
+# # '''
+#
+# from abc import ABC, abstractmethod
+#
+# class Coder(ABC):
+#       count_code_time = 0
+#
+#       @abstractmethod
+#       def get_info(self):
+#             pass
+#
+#
+#       @abstractmethod
+#       def coding(self):
+#             pass
+#
+# class Backend(Coder):
+#       def __init__(self,languages_backend):
+#             self.languages = languages_backend
+#
+#       def get_info(self):
+#             return f'{self.languages},{self.count_code_time}'
+#
+#
+#
+#       def coding(self,time):
+#             self.count_code_time += time
+#             return self.count_code_time
+#
+# class Frontend(Coder):
+#       def __init__(self,languages_frontend ):
+#             self.languages = languages_frontend
+#
+#
+#       def get_info(self):
+#             return f'{self.languages},{self.count_code_time}'
+#
+#
+#       def coding(self,time):
+#             self.count_code_time += time
+#             return self.count_code_time
+#
+#
+# class FullStack(Frontend,Backend):
+#       pass
+#
+# obj_back = Backend ('python')
+# obj_front = Frontend('JS')
+# obj_full_stack = FullStack('python')
+#
+# obj_front.coding(250)
+# obj_back.coding(100)
+# obj_full_stack.coding(150)
+#
+# print(obj_front.get_info())
+# print(obj_back.get_info())
+# print(obj_full_stack.get_info())
+#
+#
+#
+# # import random
+#
+# # def Hangman():
+# #  print ('TIME TO PLAY HANGMAN')
+#
+# # wordlist =['apples', 'oranges', 'grapes', 'pizza', 'cheese', 'burger']
+# # secret = random.choice(wordlist)
+# # guesses = 'aeiou'
+# # turns = 5
+#
+# # while turns > 0:
+# #      missed = 0
+# #      for letter in secret:
+# #          if letter in guesses:
+# #              print (letter,end=' ')
+# #          else:
+# #            print ('_',end=' ')
+# #            missed= missed + 1
+#
+# #      print
+#
+# #      if missed == 0:
+# #          print ('\nYou win!')
+# #          break
+#
+# #      guess = input('\nguess a letter: ')
+# #      guesses += guess
+#
+# #      if guess not in secret:
+# #          turns = turns -1
+# #          print ('\nNope.')
+# #          print ('\n',turns, 'more turns')
+# #          if turns < 5: print ('\n  |  ')
+# #          if turns < 4: print ('  O  ')
+# #          if turns < 3: print (' /|\ ')
+# #          if turns < 2: print ('  |  ')
+# #          if turns < 1: print (' / \ ')
+# #          if turns == 0:
+# #              print ('\n\nThe answer is', secret)
+#
+# # playagain = 'yes'
+# # while playagain == 'yes':
+# #     Hangman()
+# #     print('Do you want to play again? (yes or no)')
+# #     playagain = input()
